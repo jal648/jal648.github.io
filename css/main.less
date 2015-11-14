@@ -4,6 +4,8 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-weight: 300;
+
 }
 
 ::-moz-selection {
@@ -57,8 +59,11 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/31px Helvetica, Helvetica Neue, Arial;
     color: #333;
+}
+h1,h2,h3,p,aside {
+  font-weight:300;
 }
 
 .wrapper {
@@ -72,9 +77,16 @@ body {
 
 @dark: #666;
 @light: #444;
-@border-height: 10px;
+@header-color: #aaa;
+@border-height: 4px;
 body, html {
     color: @light;
+}
+h1 {
+  font-size: 36px;
+}
+h1,h2,h3 {
+  color: @header-color;
 }
 .header-container {
     border-bottom: @border-height solid @light;
@@ -88,11 +100,11 @@ body, html {
 .header-container,
 .footer-container,
 .main aside {
-    background: @dark;
+    background: transparent;
 }
 
 .title {
-    color: #fff;
+    color: @light;
 }
 
 footer {
@@ -231,12 +243,12 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
+//    .header-container,
+//    .main aside {
+//        -webkit-box-shadow: 0 5px 10px #aaa;
+//           -moz-box-shadow: 0 5px 10px #aaa;
+//                box-shadow: 0 5px 10px #aaa;
+//    }
 
 /* ============
     WIDE: Menu

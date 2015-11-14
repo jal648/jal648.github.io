@@ -3,6 +3,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-weight: 300;
 }
 ::-moz-selection {
   background: #b3d4fc;
@@ -46,8 +47,15 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font: 16px/31px Helvetica, Helvetica Neue, Arial;
   color: #333;
+}
+h1,
+h2,
+h3,
+p,
+aside {
+  font-weight: 300;
 }
 .wrapper {
   width: 90%;
@@ -60,20 +68,28 @@ body,
 html {
   color: #444;
 }
+h1 {
+  font-size: 36px;
+}
+h1,
+h2,
+h3 {
+  color: #aaa;
+}
 .header-container {
-  border-bottom: 10px solid #444;
+  border-bottom: 4px solid #444;
 }
 .footer-container,
 .main aside {
-  border-top: 10px solid #444;
+  border-top: 4px solid #444;
 }
 .header-container,
 .footer-container,
 .main aside {
-  background: #666;
+  background: transparent;
 }
 .title {
-  color: #fff;
+  color: #444;
 }
 footer li {
   display: inline-block;
@@ -123,13 +139,13 @@ nav a:hover {
 }
 .footer-container footer {
   color: white;
-  padding: 10px 0;
+  padding: 4px 0;
 }
 /* ===============
     ALL: IE Fixes
    =============== */
 .ie7 .title {
-  padding-top: 10px;
+  padding-top: 4px;
 }
 /* ==========================================================================
    Author's custom styles
@@ -168,12 +184,6 @@ nav a:hover {
   /* ====================
     WIDE: CSS3 Effects
    ==================== */
-  .header-container,
-  .main aside {
-    -webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa;
-  }
   /* ============
     WIDE: Menu
    ============ */
